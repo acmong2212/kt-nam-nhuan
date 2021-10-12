@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pham Duc Thang</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt("Nhap 1 nam nao do"));
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                alert(year + " day la nam nhuan");
+            } else {
+                alert(year + " day khong phai nam nhuan");
+            }
+        } else {
+            alert(year + " day la nam nhuan");
+        }
+    } else {
+        alert(year + " day khong phai nam nhuan");
+    }
+</script>
+</body>
+</html>
